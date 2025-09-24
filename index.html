@@ -1,0 +1,353 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Nani Sa — UXD & Customer Success Portfolio</title>
+  <meta name="description" content="Human-Centered UX & Customer Success that Scale with Impact. Case studies, skills, certifications, and contact." />
+  <meta property="og:title" content="Nani Sa — UXD & Customer Success Portfolio" />
+  <meta property="og:description" content="Dynamic UX Designer & Customer Success Professional with 10+ years of experience." />
+  <meta property="og:type" content="website" />
+  <meta name="color-scheme" content="light" />
+
+  <style>
+    /* ===== THEME: Silicon Valley Blue ===== */
+    :root{
+      --bg-0:#f7f9ff;
+      --ink:#142034;
+      --muted:#5a6b86;
+      --line:#e6ecf7;
+      --card:#ffffff;
+      --blue-900:#0f1c3a;
+      --blue-700:#2556e8;
+      --blue-500:#4f7cff;
+      --teal-400:#14b8a6;
+      --ring: conic-gradient(from 180deg, var(--blue-700), var(--teal-400));
+      --radius:14px;
+      --shadow:0 6px 18px rgba(20,32,52,.06);
+      --shadow-lg:0 12px 28px rgba(20,32,52,.12);
+    }
+
+    *{box-sizing:border-box}
+    html,body{margin:0}
+    body{font:16px/1.6 system-ui,-apple-system,Segoe UI,Inter,Roboto,Arial,sans-serif;color:var(--ink);background:var(--bg-0)}
+    a{text-decoration:none;color:inherit}
+    .container{max-width:1200px;margin:0 auto;padding:0 1.25rem}
+
+    /* ===== Header ===== */
+    header{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.85);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+    .bar{height:82px;display:flex;align-items:center;justify-content:space-between}
+    .brand strong{font-weight:800;color:var(--blue-900);font-size:20px}
+    nav a{font-size:14px;margin-left:20px;color:var(--muted);padding:10px 0;border-bottom:2px solid transparent}
+    nav a:hover{color:var(--blue-700);border-color:var(--blue-700)}
+    .btn{display:inline-flex;align-items:center;gap:.6rem;padding:.7rem 1.2rem;border-radius:999px;font-weight:600;border:1px solid var(--line);background:#fff;box-shadow:var(--shadow);transition:.2s}
+    .btn.primary{background:linear-gradient(90deg,var(--blue-700),var(--blue-500));color:#fff;border:none}
+    .btn:hover{transform:translateY(-2px)}
+
+    /* ===== Hero ===== */
+    .hero{padding:70px 0 50px;border-bottom:1px solid var(--line);text-align:center}
+    .photo-ring{width:124px;height:124px;border-radius:50%;overflow:hidden;margin:0 auto 16px;border:3px solid transparent;background:var(--ring);display:inline-block}
+    .photo-ring img{width:100%;height:100%;object-fit:cover;border-radius:50%}
+    .title{font-weight:850;font-size:42px;line-height:1.2;margin:0 0 12px;background:linear-gradient(90deg,var(--blue-900),var(--blue-500));-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+    .subtitle{color:var(--muted);max-width:700px;margin:0 auto 20px;font-size:18px}
+    .badges{display:flex;gap:10px;justify-content:center;flex-wrap:wrap}
+    .badge{padding:.4rem .9rem;font-size:13px;border-radius:999px;border:1px solid var(--line);background:#fff;box-shadow:var(--shadow)}
+
+    /* ===== Grid + Cards ===== */
+    .grid{display:grid;gap:18px;grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}
+    @media (min-width:980px){
+      .grid.cols-2{grid-template-columns:repeat(2,1fr)}
+      .grid.cols-3{grid-template-columns:repeat(3,1fr)}
+    }
+    .card{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:16px 18px;box-shadow:var(--shadow);transition:.25s;font-size:15px}
+    .card:hover{transform:translateY(-5px) scale(1.02);box-shadow:var(--shadow-lg);border-color:var(--blue-500)}
+    .card h3{font-size:18px;margin:0 0 8px;color:var(--blue-700);font-weight:700}
+    .card ul{list-style:none;margin:0;padding:0}
+    .card ul li{margin:8px 0;padding-left:18px;position:relative;color:var(--muted);font-size:14px}
+    .card ul li::before{content:"✔";position:absolute;left:0;color:var(--blue-500);font-size:13px}
+
+    /* ===== Sections ===== */
+    section{padding:72px 0}
+    h2{font-size:28px;margin:0 0 8px;color:var(--blue-900)}
+    .section-sub{color:var(--muted);margin:0 0 22px}
+
+    /* ===== Footer ===== */
+    footer{border-top:1px solid var(--line);padding:28px 0;text-align:center;color:var(--muted);background:linear-gradient(180deg,#f7faff,#eef3ff)}
+
+   /* ===== WhatsApp Floating Button (força aparência) ===== */
+.whatsapp-float{
+  position: fixed !important;
+  inset: auto 20px 20px auto !important; /* right:20px; bottom:20px */
+  z-index: 1000 !important;
+  background: #25D366 !important;
+  border-radius: 50% !important;
+  width: 60px !important;
+  height: 60px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  box-shadow: 0 8px 22px rgba(0,0,0,.18) !important;
+  transition: transform .3s ease !important;
+  text-decoration: none !important;
+  border: none !important;
+  overflow: hidden !important;
+  font-size: 0 !important;            /* esconde qualquer texto injetado */
+  color: transparent !important;       /* defesa extra */
+}
+.whatsapp-float:hover{ transform: scale(1.1) !important; }
+
+/* Se o builder injeta pseudo-elementos com texto, anulamos: */
+.whatsapp-float::before,
+.whatsapp-float::after{ content: none !important; }
+
+.whatsapp-float svg{
+  width: 28px !important;
+  height: 28px !important;
+  fill: #fff !important;
+  display: block !important;
+}
+
+.emoji-logo {
+  font-size: 64px;   /* pode ajustar o tamanho */
+  line-height: 1;
+  display: inline-block;
+  text-decoration: none;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+.emoji-logo:hover {
+  transform: scale(1.15);
+}
+  </style>
+</head>
+<body>
+  <!-- ===== HEADER ===== -->
+  <header>
+    <div class="container bar">
+      <div class="brand">
+  <div class="brand">
+  <a href="#" class="emoji-logo">👩🏼‍💻</a>
+</div>
+
+</div>
+      <nav>
+        <a href="#work">Work</a>
+        <a href="#skills">Skills</a>
+        <a href="#edge">Edge</a>
+        <a href="#certs">Certifications</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <a class="btn ghost" href="#contact">Let’s talk</a>
+    </div>
+  </header>
+
+  <!-- ===== HERO ===== -->
+  <!-- Hero -->
+<section class="hero">
+  <div class="container">
+    <div style="display:grid;place-items:center;margin-bottom:20px">
+      <img src="https://i.imgur.com/db0JJ5k.jpg" alt="Nani Sa portrait" style="width:120px;height:120px;border-radius:50%;box-shadow:0 4px 14px rgba(0,0,0,.25)" />
+      <h2 style="margin:12px 0 0;font-size:28px;font-weight:700;color:var(--blue-900)">I’m Nani</h2>
+    </div>
+    <h1 class="title">Human-centered UX that turns adoption into retention</h1>
+    <p class="subtitle">UX Designer and Customer Success Strategist with experience designing SaaS systems and delivering <strong>+40 freelance UX/UI projects</strong> worldwide.</p>
+    <div style="margin-top:22px">
+      <a class="btn primary" href="#work">See Case Studies</a>
+      <a class="btn secondary" href="Resume-NaniSa.pdf" download>Download Resume</a>
+    </div>
+  </div>
+</section>
+
+
+  <!-- ===== WORK ===== -->
+  <section id="work">
+    <div class="container">
+      <h2>Selected Work & Case Studies</h2>
+      <p class="section-sub">Problem → Approach → Solution → Outcomes</p>
+      <div class="grid cols-2">
+        <article class="card">
+          <h3>AngelOps — Remote Elder Care Experience</h3>
+          <p><em>Role:</em> UX Lead · 2025 · Healthcare</p>
+          <p>Helping families feel connected while delivering operational clarity for caregivers. Empathy engineered into digital experiences.</p>
+        </article>
+        <article class="card">
+          <h3>BJJ OPS — Attendance via Face Recognition</h3>
+          <p><em>Role:</em> Product UX · 2025 · Fitness</p>
+          <p>Automated presence via group photo recognition — reducing admin time and boosting retention.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+   <!-- Freelance UX/UI Projects -->
+  <section id="freelance">
+    <div class="container">
+      <h2>Freelance UX/UI Projects</h2>
+      <p class="subtitle-section">Diverse UX/UI work across startups, NGOs, e-commerce, and SaaS clients.</p>
+
+      <div class="cards-grid">
+        <article class="card">
+          <h3>Fashion E-commerce App — Checkout Redesign</h3>
+          <p><strong>Problem:</strong> High cart abandonment during mobile checkout.</p>
+          <p><strong>Solution:</strong> Simplified steps, mobile-first UI, clearer progress indicators.</p>
+          <div class="kpis"><div class="kpi"><strong>+22%</strong><span>Conversion</span></div></div>
+        </article>
+
+        <article class="card">
+          <h3>Healthcare Startup — Appointment Booking</h3>
+          <p><strong>Problem:</strong> Patients struggled to book appointments easily via mobile.</p>
+          <p><strong>Solution:</strong> Intuitive booking screens, error-proof date picker, push notifications.</p>
+          <div class="kpis"><div class="kpi"><strong>+35%</strong><span>Appointments</span></div></div>
+        </article>
+
+        <article class="card">
+          <h3>NGO Donation Platform — ComAmor.org</h3>
+          <p><strong>Problem:</strong> Donors lacked transparency and a simple donation process.</p>
+          <p><strong>Solution:</strong> Accessible donation website with emotional storytelling and mobile flows.</p>
+          <div class="kpis"><div class="kpi"><strong>+40%</strong><span>Recurring donations</span></div></div>
+        </article>
+
+        <article class="card">
+          <h3>Corporate Landing Pages — B2B Clients</h3>
+          <p><strong>Problem:</strong> Low lead capture from outdated pages.</p>
+          <p><strong>Solution:</strong> Modern responsive UI with CTAs and integrated analytics.</p>
+          <div class="kpis"><div class="kpi"><strong>+28%</strong><span>Leads</span></div></div>
+        </article>
+
+        <article class="card">
+          <h3>SaaS Dashboard Redesign</h3>
+          <p><strong>Problem:</strong> Users struggled with complex BI metrics.</p>
+          <p><strong>Solution:</strong> Clean IA, card-based metrics, and role-based views.</p>
+          <div class="kpis"><div class="kpi"><strong>+31%</strong><span>Feature adoption</span></div></div>
+        </article>
+      </div>
+
+      <p style="margin-top:26px;font-weight:600;font-size:18px;color:var(--blue-900);text-align:center">
+        Over <strong>+40 real UX/UI projects</strong> delivered worldwide.
+      </p>
+    </div>
+  </section>
+
+
+  <!-- ===== EDGE ===== -->
+  <section id="edge">
+    <div class="container">
+      <h2>Strategic Edge</h2>
+      <div class="grid cols-2">
+        <div class="card"><h3>Design ↔ Success Loop</h3><p>I link UX decisions directly to retention levers and renewals — design that continues to perform post-launch.</p></div>
+        <div class="card"><h3>Operational Clarity</h3><p>From Globo live productions to SaaS dashboards, I create workflows that eliminate noise and boost confidence.</p></div>
+      </div>
+    </div>
+  </section>
+  <!-- About -->
+  <section id="about">
+    <div class="container">
+      <h2>About Me</h2>
+      <p class="subtitle-section">From broadcast media in Brazil to SaaS systems across Brazil & USA.</p>
+      <div class="cards-grid">
+        <article class="card">
+          <p>I started my career in Brazil working with user experience in broadcast media (TV Globo), where I learned how to connect people with information in an intuitive way. Over time, I transitioned to technology and product design, expanding my skills into UX/UI, service design, and customer success.</p>
+        </article>
+        <article class="card">
+          <p>I have designed SaaS systems applied to healthcare, fitness, property management, and education, collaborating with multidisciplinary teams in Brazil and the USA. In parallel, I have delivered <strong>+40 freelance UX/UI projects</strong> for startups, NGOs, and SMBs worldwide, creating measurable impact in adoption, retention, and user satisfaction.</p>
+
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SKILLS ===== -->
+  <section id="skills">
+    <div class="container">
+      <h2>Skills & Tools</h2>
+      <div class="grid cols-2">
+        <div class="card">
+          <h3>UXD Expertise</h3>
+          <ul>
+            <li>User Research & Usability Testing</li>
+            <li>Information Architecture & Prototyping</li>
+            <li>Design Systems & Accessibility</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Customer Success</h3>
+          <ul>
+            <li>Onboarding & Retention Strategies</li>
+            <li>Playbooks & Health Metrics</li>
+            <li>Client Relationship Management</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CERTIFICATIONS ===== -->
+  <section id="certs">
+    <div class="container">
+      <h2>Certifications</h2>
+      <div class="grid cols-3">
+        <div class="card">Google UX Design — 2023</div>
+        <div class="card">Scrum Master & Product Owner — 2023</div>
+        <div class="card">Agile Management — 2023</div>
+        <div class="card">Harvard Extension — Business Innovation</div>
+        <div class="card">AWS Fundamentals — 2023</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT ===== -->
+  <section id="contact">
+    <div class="container">
+      <h2>Let’s work together</h2>
+      <div class="grid cols-2">
+        <div class="card">
+          <p><strong>Email:</strong> <a href="mailto:nani.uxd@gmail.com">nani.uxd@gmail.com</a><br>
+             <strong>Phone/WhatsApp:</strong> +1 (407) 724-1855<br>
+             <strong>LinkedIn:</strong> <a href="https://linkedin.com/in/nani-sa">linkedin.com/in/nani-sa</a></p>
+        </div>
+        <div class="card">
+          <h3>What I bring</h3>
+          <ul>
+            <li>Measurable UX outcomes tied to business goals</li>
+            <li>Clear communication across teams</li>
+            <li>Creative problem-solving under ambiguity</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">© 2025 Nani Sa. All rights reserved.</div>
+  </footer>
+
+  <!-- WhatsApp Floating Button -->
+<a href="https://wa.me/14079241855?text=Hello%20Nani%2C%20I%27m%20interested%20in%20your%20UX%20and%20Customer%20Success%20services."
+   target="_blank" rel="noopener"
+   class="whatsapp-float" aria-label="Chat on WhatsApp">
+  <!-- Ícone WhatsApp (Font Awesome Brands) -->
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" aria-hidden="true" focusable="false">
+    <path d="M380.9 97.1C339-8.9 223.9-32.6 131.8 28.6c-47.1 31.2-77.5 83.5-80.5 140.3-3.1 56.8 19 111.2 60.6 151.2l-13.3 64.2c-2.7 13 9.3 23.3 21.6 18.4l59.6-23.7c43.4 23.5 93.9 27.7 140.4 11.6 46.5-16.1 84-51.6 102.4-97.6 18.4-46 18.8-96.8.3-142.4zM241 373c-31.3 0-61.9-9.1-88.2-26.3l-6.3-4-35.4 14 7.1-34.1-4.7-6.8c-24.8-28.5-38.5-65.4-37.2-103.2 1.3-37.8 16.3-73.2 42.5-100.1 57-59.8 154.8-56.9 209.1 6.1 27.7 31.4 42.5 72.1 42.5 114.2 0 88.2-72 160-160 160z"/>
+  </svg>
+</a>
+
+<style>
+.whatsapp-float {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+  background: #25D366; /* verde WhatsApp */
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.2);
+  transition: transform 0.3s ease;
+}
+</style>
+
+</body>
+</html>
